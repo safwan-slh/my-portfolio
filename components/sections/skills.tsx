@@ -1,8 +1,11 @@
+import type { CSSProperties } from "react"
+
 import { Section } from "@/components/shared/section"
 import { Heading } from "@/components/shared/heading"
 import { Reveal } from "@/components/shared/reveal"
 import { skills } from "@/data/skills"
 import { Badge } from "@/components/ui/badge"
+import { SkillIcon, skillBrandColor } from "@/components/icons/skill-icon"
 
 const categories = {
   frontend: "Frontend",
@@ -36,7 +39,20 @@ export function Skills() {
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     {items.map((skill) => (
-                      <Badge key={skill.id} variant="secondary" className="px-3 py-1.5 text-sm rounded-md">
+                      <Badge
+                        key={skill.id}
+                        variant="secondary"
+                        className="group gap-1.5 rounded-md px-3 py-1.5 text-sm transition-colors [&>svg]:size-3.5"
+                        style={
+                          {
+                            "--brand": skillBrandColor(skill.id),
+                          } as CSSProperties
+                        }
+                      >
+                        <SkillIcon
+                          id={skill.id}
+                          className="shrink-0 text-foreground/70 transition-colors duration-200 group-hover:text-[color:var(--brand)]"
+                        />
                         {skill.name}
                       </Badge>
                     ))}
