@@ -14,4 +14,5 @@ export const skills: Skill[] = [
   { id: "github", name: "GitHub", category: "tools" },
   { id: "vscode", name: "VS Code", category: "tools" },
   { id: "figma", name: "Figma", category: "tools" },
+  { id: "phpmyadmin", name: "phpMyAdmin", category: "backend" },
 ]
