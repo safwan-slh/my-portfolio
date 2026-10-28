@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Safwan Salaeh",
   title: "Frontend Developer | UI/UX Enthusiast",
   description: "Portfolio showcasing projects, skills & experience.",
-  url: "https://yourdomain.com",
+  url: "https://my-portfolio-topaz-three-52.vercel.app",
   links: {
     github: "https://github.com/yourusername",
     linkedin: "https://linkedin.com/in/yourusername",
