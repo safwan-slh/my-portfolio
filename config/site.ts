@@ -3,7 +3,6 @@ export const siteConfig = {
   title: "Frontend Developer | UI/UX Enthusiast",
   description: "Portfolio showcasing projects, skills & experience.",
   url: "https://yourdomain.com",
-  ogImage: "/og.jpg",
   links: {
     github: "https://github.com/yourusername",
     linkedin: "https://linkedin.com/in/yourusername",
